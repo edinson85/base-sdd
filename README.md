@@ -1,7 +1,7 @@
 ---
 id: ART-00
 titulo: Índice de la base de artefactos SDD
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Base de artefactos para proyectos SDD con IA
@@ -126,3 +126,4 @@ Stack estándar: **PostgreSQL · Python (FastAPI) · React · Flutter · Docker 
 | 0.1.0 | 2026-11-20 | ART-02, 10, 11, 46 |
 | 1.0.0 | 2026-11-20 | Base completa (ART-01 a ART-48) |
 | 1.1.0 | 2026-11-20 | Alertas flotantes (ART-29 §1 y relacionados); fase F2 de propuesta de interfaz (ART-49); insumos previos al desarrollo (ART-50); fases renumeradas F0-F7; Constitución 1.1.0 |
+| 1.2.0 | 2026-11-20 | GitHub como plataforma por defecto: ART-36 v2.0.0 con GitHub Actions, GHCR, despliegue por SSH y producción manual; ADR-BASE-13. Repositorio oficial: `github.com/edinson85/base-sdd` |
