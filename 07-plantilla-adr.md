@@ -1,7 +1,7 @@
 ---
 id: ART-07
 titulo: Plantilla ADR y decisiones base del stack
-version: 1.0.0
+version: 1.1.0   # 1.1.0: ADR-BASE-13 (GitHub)
 estado: vigente
 aplica_a: [todos]
 depende_de: [ART-02]
@@ -77,3 +77,4 @@ principios_afectados: [P-XX-NN]
 | ADR-BASE-10 | **Playwright** para E2E web y **Schemathesis + OWASP ZAP** para pruebas adversarias automatizadas | Cypress, Selenium | Multi-navegador, paralelo, buen soporte de WebSocket; fuzzing guiado por OpenAPI |
 | ADR-BASE-11 | **structlog** para logs JSON | logging estándar con formateador | Contexto (`trace_id`) por contextvars y procesadores de enmascarado |
 | ADR-BASE-12 | **k6** para pruebas de carga | Locust, JMeter | Scripts versionables, umbrales como código, soporte WebSocket |
+| ADR-BASE-13 | **GitHub + GitHub Actions + GHCR** para repositorios, CI/CD, registro de imágenes y despliegue por SSH | Bitbucket + Pipelines, GitLab | Mayor cupo gratuito de minutos de CI en repositorios privados, integración con Claude (sesiones conectadas a repositorios de GitHub), Dependabot y detección de secretos incluidos. Limitación aceptada: en repositorios privados sin Enterprise no hay aprobación obligatoria de despliegues, así que producción se despliega solo por ejecución manual (ART-36 §3.1) |
